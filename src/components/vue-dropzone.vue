@@ -267,7 +267,7 @@ export default {
 
     vm.$emit("vdropzone-mounted");
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.destroyDropzone) this.dropzone.destroy();
   },
   methods: {
